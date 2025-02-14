@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">atv-Room</string>
+    <string name="title_main">Escolha uma opção</string>
+    <string name="add_product">Adicionar produto</string>
+    <string name="search_product">Procurar produto</string>
+    <string name="list_products">Listar Produtos</string>
+</resources>
