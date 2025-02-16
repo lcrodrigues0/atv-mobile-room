@@ -4,4 +4,8 @@
     <string name="add_product">Adicionar produto</string>
     <string name="search_product">Procurar produto</string>
     <string name="list_products">Listar Produtos</string>
+    <string name="product_name">Nome</string>
+    <string name="product_price">Preço</string>
+    <string name="product_qtt">Quantidade</string>
+    <string name="add">Adicionar</string>
 </resources>

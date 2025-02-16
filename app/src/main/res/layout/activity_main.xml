@@ -5,35 +5,42 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:id="@+id/titleTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="@string/title_main"
+        android:textColor="@color/purple"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="24sp"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/purple"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/addProductBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:drawableTop="@drawable/add_product"
         android:text="@string/add_product"
-        app:layout_constraintTop_toBottomOf="@+id/titleTv"
-        app:layout_constraintBottom_toBottomOf="@+id/searchProductBtn"
+        android:textColor="@color/purple"
+        app:layout_constraintBottom_toTopOf="@+id/searchProductBtn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/titleTv" />
+
 
     <Button
         android:id="@+id/searchProductBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:drawableTop="@drawable/add_product"
         android:text="@string/search_product"
+        android:textColor="@color/purple"
         app:layout_constraintBottom_toTopOf="@+id/listProductBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,11 +50,15 @@
         android:id="@+id/listProductBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:background="@color/transparent"
+        android:drawableTop="@drawable/add_product"
         android:text="@string/list_products"
-        app:layout_constraintTop_toBottomOf="@+id/searchProductBtn"
+        android:textColor="@color/purple"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/searchProductBtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
