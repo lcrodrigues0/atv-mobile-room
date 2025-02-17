@@ -8,4 +8,7 @@
     <string name="product_price">Preço</string>
     <string name="product_qtt">Quantidade</string>
     <string name="add">Adicionar</string>
+    <string name="success_add_msg">Produto registrado com sucesso</string>
+    <string name="fail_add_msg">Erro ao adicionar produto</string>
+    <string name="fill_fields_msg">Preencha todos os campos</string>
 </resources>

@@ -13,7 +13,7 @@ class ProductModel {
     @ColumnInfo(name = "name")
     var name: String = ""
 
-    @ColumnInfo(name = "pricw")
+    @ColumnInfo(name = "price")
     var price: Double = 0.0
 
     @ColumnInfo(name = "quantity")
