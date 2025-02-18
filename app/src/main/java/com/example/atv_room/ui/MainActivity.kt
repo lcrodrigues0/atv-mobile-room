@@ -17,12 +17,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         setContentView(binding.root)
 
         binding.addProductBtn.setOnClickListener(this)
+        binding.searchProductBtn.setOnClickListener(this)
+        binding.listProductBtn.setOnClickListener(this)
     }
 
     override fun onClick(view: View){
-        if(view.id == R.id.addProductBtn){
-            Intent(this, AddProductActivity::class.java)
-            startActivity(Intent(this, AddProductActivity::class.java))
+        when(view.id){
+            R.id.addProductBtn -> startActivity(Intent(this, AddProductActivity::class.java))
+            R.id.searchProductBtn -> startActivity(Intent(this, SearchProductActivity::class.java))
+            R.id.listProductBtn -> startActivity(Intent(this, ListProductActivity::class.java))
         }
     }
 }
