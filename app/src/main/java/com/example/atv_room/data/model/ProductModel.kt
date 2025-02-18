@@ -6,10 +6,11 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "Product")
 class ProductModel {
-    @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name="id")
-    var id: Int = 0
+//    @PrimaryKey(autoGenerate = true)
+//    @ColumnInfo(name="id")
+//    var id: Int = 0
 
+    @PrimaryKey()
     @ColumnInfo(name = "name")
     var name: String = ""
 

@@ -11,5 +11,8 @@ class SearchProductActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivitySearchProductBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
+
+
 }

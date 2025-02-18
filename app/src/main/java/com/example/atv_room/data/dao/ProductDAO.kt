@@ -18,6 +18,6 @@ interface ProductDAO {
     @Delete
     fun delete(p: ProductModel)
 
-    @Query("SELECT * FROM Product WHERE id = :id")
-    fun getById(id: Int) : ProductModel
+    @Query("SELECT * FROM Product WHERE name = :name")
+    fun getByName(name: String) : ProductModel?
 }

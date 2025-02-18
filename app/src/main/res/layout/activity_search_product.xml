@@ -20,47 +20,49 @@
         android:id="@+id/searchByNameEt"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:autofillHints=""
         android:background="@android:drawable/edit_text"
         android:hint="@string/product_name"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@id/searchByNameBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/productNameTv"
         app:layout_constraintTop_toBottomOf="@id/searchProductTv" />
 
     <TextView
         android:id="@+id/productNameTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nome"
+        android:layout_marginBottom="10dp"
+        android:text="Name"
         android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/productPriceTv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/searchByNameEt"
-        app:layout_constraintBottom_toTopOf="@+id/productPriceTv"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/productPriceTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text="Price"
         android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/productQttTv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/productNameTv"
-        app:layout_constraintBottom_toTopOf="@+id/productQttTv"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/productQttTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="0dp"
         android:text="Quantity"
         android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/searchByNameBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/searchByNameEt"
-        app:layout_constraintBottom_toTopOf="@+id/searchByNameBtn"/>
+        app:layout_constraintTop_toBottomOf="@id/searchByNameEt" />
 
     <Button
         android:id="@+id/searchByNameBtn"
